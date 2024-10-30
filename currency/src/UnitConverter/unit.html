@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Unit Converter</title>
+      <style>
+            *{
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+            }
+
+            body{
+                  font-family: tahoma;
+            }
+            h2{
+                  text-align: center;
+                  margin-top: 40px;
+
+            }
+            #Conatiner{
+             margin: 15px auto 0 auto;
+             width: 80%; 
+             text-align: center;  
+             background-color: lightgreen; 
+             border-radius: 10px;
+              padding: 20px;
+
+            }
+           .input-div{
+            display: inline-block;
+           }
+           .input{
+            padding: 5px 10px;
+            margin: 10px;
+            font-size: 30px;
+            font-weight: bold;
+            width: 200px;
+            text-align: center;
+            border-radius: 10px;
+           }
+           label{
+            font-size: 20px;
+           }
+
+      </style>
+</head>
+
+<body>
+      <h2>Unit Converter</h2>
+      <div id="Conatiner">
+            <div class="input-div">
+                  <label>Feet</label><br/>
+                  <input type="number" value="1" class="input" id="feet"/>
+            </div>
+            <div class="input-div">
+                  <h2 id="heading">=</h2>
+            </div>
+            <div class="input-div">
+                  <label>Inches</label><br/>
+                  <input type="number" value="12" class="input" id="inch"/>
+            </div>
+      </div>
+
+      <script>
+            var feet = document.getElementById("feet")
+            var inch= document.getElementById("inch")
+            feet.addEventListener('input',function(){
+                  // console.log("changed")
+                  // 1 feet mai 12 inch
+                  let f = this.value
+                  let i = f*12
+                  inch.value = i
+            })
+                 inch.addEventListener('input',function(){
+                  let i = this.value
+                  let f = i/12
+                  if(!Number.thisInteger){
+                        f=f.toFixed(2);
+                  };
+                  feet.value = f
+            })
+
+
+      </script>
+
+      
+</body>
+</html>
