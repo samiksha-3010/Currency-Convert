@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/487f0ebb06.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="navbar.css" />
+  </head>
+  <body>
+    <div class="Navbar" id="navbar">
+      <div class="Navbar-up">
+        <div class="Navbar-up-conteiner">
+          <div class="logo-afiya">
+            <div>
+              <img
+                class="logo-img"
+                src="https://media.istockphoto.com/id/1275720974/vector/blue-and-green-medical-cross-health.jpg?s=612x612&w=0&k=20&c=j322qhLcySdh7qhtlTnUf_EUzlQG2i9bnoJ3vHdJ81I="
+                alt=""
+              />
+            </div>
+            <div>
+              VILLAGE <br />
+              DENTIEST <br />
+              <small>Healind globally...</small>
+            </div>
+          </div>
+          <div class="dr-logo">
+            <div>
+              <img
+                class="logo-img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqFJ3M3tCE-m3v69B6pK_laCJRJjNXNEC4vQ&usqp=CAU"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="consalation-logo">
+            <div class="icon-body">
+              <div class="icons"><i class="fa-solid fa-laptop"></i></div>
+              <div>
+                <p class="head"> Medical Option</p>
+                <h3>Book Your Consaltaion</h3>
+              </div>
+            </div>
+          </div>
+          <div class="contact-logo">
+            <div class="icon-body">
+              <div class="icons"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <p class="head">Call Us Now</p>
+                <h3>885 886 2202</h3>
+              </div>
+            </div>
+          </div>
+          <div class="email-logo">
+            <div class="icon-body">
+              <div class="icons"><i class="fa-regular fa-envelope"></i></div>
+              <div>
+                <p class="head">Email Us On</p>
+                <h3>Clinic@gmail.com</h3>
+              </div>
+            </div>
+          </div>
+          <div class="flag-selector">
+            <!-- Display the selected flags -->
+            <div id="flags-container">
+              <img
+                id="usa-flag"
+                class="flag"
+                src="https://uxwing.com/wp-content/themes/uxwing/download/flags-landmarks/united-states-flag-icon.png"
+                alt="USA"
+              />
+              <img
+                id="india-flag"
+                class="flag"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHVn2Kh3KTDE5Y30vKR5xYF-_4Bj21BHB7N-a9gUqATA&s"
+                alt="India"
+              />
+            </div>
+
+            <!-- Arrow down icon for the dropdown -->
+            <div class="arrow-down" onclick="toggleDropdown()">
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <!-- Dropdown menu for selecting a flag -->
+            <div id="dropdown" class="dropdown">
+              <div class="dropdown-item" onclick="selectFlag('usa-flag')">
+                <!-- You can add more items as needed -->
+                <img class="flag" src="usa-flag.png" alt="USA" />
+                USA
+              </div>
+              <div class="dropdown-item" onclick="selectFlag('india-flag')">
+                <img class="flag" src="india-flag.png" alt="India" />
+                India
+              </div>
+              <!-- Add more dropdown items as needed -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Navbar-down">
+        <div class="Navbar-up-conteiner">
+          <div class="Navbar-down-menu">
+            <span>Home</span>
+            <span>About Us </span>
+            <span>Treatment +</span>
+            <span> Destination</span>
+            <span>Hospitals</span>
+            <span>FAQS</span>
+            <span>Blog</span>
+            <span>Request A Quote</span>
+          </div>
+
+          <div class="search-container">
+            <div class="search">
+              <i class="icons-serch fa-solid fa-magnifying-glass"></i>
+              <input type="search" placeholder="Search" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="body-container">
+      <div class="body-ad-pg">
+
+        <p >
+          <span>home </span> <b>></b> <span>Treatments</span> <b>></b> <span>Dentiest</span></p>
+
+          <p><h2>Total Teeth Replacement</h2></p>
+          
+          <p>Total Teeth Replacement kdjhkajh kdjahdkjahkj akdhkahdjka kjadhkjahdkjadh <br> mmdbmnbzmn mzbcmnbczmnbczmn</p>
+          <button class="button-home" >
+Enquire Now
+          </button>
+      </div>
+
+
+      <div class="page-scroller-body">
+        <div class="page-scroller-menu">
+          <span onclick="showInfo('overview')" id="overview-link"
+            >Overview</span
+          >
+          <span onclick="showInfo('eligibility')" id="eligibility-link"
+            >Eligibility</span
+          >
+          <span onclick="showInfo('preparation')" id="preparation-link"
+            >Preparation</span
+          >
+          <span onclick="showInfo('about-treatment')" id="about-treatment-link"
+            >About Treatment</span
+          >
+          <span onclick="showInfo('post-treatment')" id="post-treatment-link"
+            >Post-Treatment</span
+          >
+          <span onclick="showInfo('recovery-tips')" id="recovery-tips-link"
+            >Recovery Tips</span
+            
+          >
+          <span onclick="showInfo('faqs')" id="faqs-link">FAQs</span>
+        </div>
+
+        <div id="overview" class="info-page active">
+          <h2 class="left"> Trestment Overview</h2>
+
+          <div class="the-content-pg">
+            <div class="content">
+              <p>
+                Even though primary care doctors treat some of the same
+                injuries, it can be a good idea to see a doctor who’s an expert
+                in treating these problems. That’s because orthopedic doctors
+                have advanced knowledge and training beyond your primary care
+                doctor to treat musculoskeletal problems. Different orthopedic
+                doctors specialize even further in specific areas of your
+                body—like your hip, ankle and foot, or shoulder. Even though
+                primary care doctors treat some of the same injuries, it can be
+                a good idea to see a doctor who’s an expert in treating these
+                problems. That’s because orthopedic doctors have advanced
+                knowledge and training beyond your primary care doctor to treat
+                musculoskeletal problems. Different orthopedic doctors
+                specialize even further in specific areas of your body—like your
+                hip, ankle and foot, or shoulder.
+              </p>
+            </div>
+            <div class="content-img">
+              <img
+                src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/06/orthopedic-doctor-ankle-1296x728-header.jpg?w=1155&h=1528"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- Add content for the Overview section -->
+        </div>
+
+        <div id="eligibility" class="info-page">
+          <h2 class="left">Eligibility for Treatment</h2>
+          <div class="the-content-pg">
+              <div class="content">
+                <div>
+                  <p>
+                    To determine eligibility for orthopedic treatment, it's essential to consider the nature of
+                    musculoskeletal problems. Orthopedic doctors specialize in treating injuries and conditions
+                    affecting the bones, joints, ligaments, muscles, and tendons. <br>
+                   
+                  </p>
+                  <ul class="positioning">
+                    <li>Assessment of the specific musculoskeletal issue.</li>
+                    <li>Previous treatments and their effectiveness.</li>
+                    <li>Overall health and medical history.</li>
+                </ul>
+                </div>
+                  
+                  
+                  
+                  
+              </div>
+              <div class="content-img">
+                  <!-- Replace the image with a brief description -->
+                  <form class="form-left">
+                    <h3 class="form-head">Need Help</h3>
+                    
+                    <input class="color" type="text" id="name" name="name"  placeholder="Name">
+                
+                   
+                    <input type="email" id="email" name="email" placeholder="Email">
+                
+                   
+                    <input type="tel" id="phone" name="phone"  placeholder="Phone Number">
+                
+                    
+                    <textarea id="description" name="description" rows="4"  placeholder="Describe Your Treatment:"></textarea>
+                
+                    <input class="button"  type="submit" value="Send Enquiry" >
+                </form>
+              </div>
+          </div>
+      </div>
+
+        <div id="preparation" class="info-page">
+          <h2 class="left">Preparation Before Treatment</h2>
+          <div class="the-content-pg">
+            <div class="content">
+              <div>
+                <p>
+                  To determine eligibility for orthopedic treatment, it's essential to consider the nature of
+                  musculoskeletal problems. Orthopedic doctors specialize in treating injuries and conditions
+                  affecting the bones, joints, ligaments, muscles, and tendons. <br>
+                 
+                </p>
+                <ul class="positioning">
+                  <li>Assessment of the specific musculoskeletal issue.</li>
+                  <li>Previous treatments and their effectiveness.</li>
+                  <li>Overall health and medical history.</li>
+                  <li>Assessment of the specific musculoskeletal issue.</li>
+                  <li>Previous treatments and their effectiveness.</li>
+                  <li>Overall health and medical history.</li>
+              </ul>
+              </div>
+            </div>
+            <div class="content-img">
+
+            </div>
+          </div>
+          <!-- Add content for the Preparation section -->
+        </div>
+
+        <div id="about-treatment" class="info-page">
+          <h2 class="left">About Treatment</h2>
+          <div class="the-content-pg">
+            <div class="content">
+              <div>
+                <p>
+                  To determine eligibility for orthopedic treatment, it's essential to consider the nature of
+                  musculoskeletal problems. Orthopedic doctors specialize in treating injuries and conditions
+                  affecting the bones, joints, ligaments, muscles, and tendons. <br>
+                 
+                </p>
+                <ul class="positioning">
+                  <li>Assessment of the specific musculoskeletal issue.</li>
+                  <li>Previous treatments and their effectiveness.</li>
+                  <li>Overall health and medical history.</li>
+                  <li>Assessment of the specific musculoskeletal issue.</li>
+                  <li>Previous treatments and their effectiveness.</li>
+                  <li>Overall health and medical history.</li>
+              </ul>
+              </div>
+            </div>
+            <div class="content-img">
+
+            </div>
+          </div>
+          <!-- Add content for the About Treatment section -->
+        </div>
+
+        <div id="post-treatment" class="info-page">
+          <h2 class="left">Post-Treatment Care</h2>
+          <div class="the-content-pg">
+            <div class="content">
+              <div>
+                <p>
+                  To determine eligibility for orthopedic treatment, it's essential to consider the nature of
+                  musculoskeletal problems. Orthopedic doctors specialize in treating injuries and conditions
+                  affecting the bones, joints, ligaments, muscles, and tendons. <br>
+                 
+                </p>
+                <ul class="positioning">
+                  <li>Assessment of the specific musculoskeletal issue.</li>
+                  <li>Previous treatments and their effectiveness.</li>
+                  <li>Overall health and medical history.</li>
+                  <li>Assessment of the specific musculoskeletal issue.</li>
+                  <li>Previous treatments and their effectiveness.</li>
+                  <li>Overall health and medical history.</li>
+              </ul>
+              </div>
+            </div>
+            <div class="content-img">
+
+            </div>
+          <!-- Add content for the Post-Treatment section -->
+        </div>
+
+        <div id="recovery-tips" class="info-page">
+          <h2>Recovery Tips</h2>
+          
+          <!-- Add content for the Recovery Tips section -->
+        </div>
+
+        <div id="faqs" class="info-page">
+          <h2>FAQs</h2>
+          <!-- Add content for the FAQs section -->
+        </div>
+      </div>
+    </div>
+
+    <div class="Navbar-up-conteiner">
+      <div class="home-sroller">
+        <h3> <i style="color: red; ">Doctors</i> </h3>
+        <h2><b>Top Orthopedic <i style="color: rgb(40, 55, 190);"> Doctors </i></b></h2>
+        <div class="three-image-scroll">
+            <div class="image-container"><img class="image" src="https://totalorthocare.in/wp-content/uploads/portrait-confident-young-male-doctor-1024x683.jpg" alt="Image 1"></div>
+            <div class="image-container"><img class="image" src="https://c8.alamy.com/comp/WX1K8N/smart-surgeon-holding-x-ray-report-of-a-patient-isolated-against-white-background-WX1K8N.jpg" alt="Image 2"></div>
+            <div class="image-container"><img class="image" src="data:image/jpeg;base64,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" alt="Image 3"></div>
+            <div class="image-container"><img class="image" src="https://img.freepik.com/premium-photo/healthcare-rontgen-people-medicine-concept-smiling-male-doctor-white-coat-looking-x-ray-medical-office_380164-93390.jpg" alt="Image 4"></div>
+            <div class="image-container"><img class="image" src="data:image/jpeg;base64,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" alt="Image 5"></div>
+            <div class="image-container"><img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5-2D-th5_qpldC0Z7CuELQE41lSLAhX5LgA4nfI6Yp3mepvskBWfLvE0fIH6a84iAzIU&usqp=CAU" alt="Image 6"></div>
+            <div class="image-container"><img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRMTHtw0jeeFQR8JpXHN7r1nI8rCs0DXY1Mg&usqp=CAU" alt="Image 7"></div>
+            <div class="image-container"><img class="image" src="https://totalorthocare.in/wp-content/uploads/portrait-confident-young-male-doctor-1024x683.jpg" alt="Image 8"></div>
+            <div class="image-container"><img class="image" src="https://totalorthocare.in/wp-content/uploads/portrait-confident-young-male-doctor-1024x683.jpg" alt="Image 1"></div>
+            <div class="image-container"><img class="image" src="https://c8.alamy.com/comp/WX1K8N/smart-surgeon-holding-x-ray-report-of-a-patient-isolated-against-white-background-WX1K8N.jpg" alt="Image 2"></div>
+            <div class="image-container"><img class="image" src="data:image/jpeg;base64,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" alt="Image 3"></div>
+        </div>
+        <button class="arrow arrow-left" onclick="scrollImages(-1)">←</button>
+        <button class="arrow arrow-right" onclick="scrollImages(1)">→</button>
+    </div>
+
+    </div>
+
+    <!-- Your page content goes here -->
+
+    <script>
+      // JavaScript functions for handling toggle effect and flag selection
+      function toggleDropdown() {
+        var dropdown = document.getElementById("dropdown");
+        dropdown.style.display =
+          dropdown.style.display === "flex" ? "none" : "flex";
+      }
+
+      function selectFlag(flagId) {
+        var flags = document.getElementsByClassName("flag");
+
+        // Hide all flags
+        for (var i = 0; i < flags.length; i++) {
+          flags[i].style.display = "none";
+        }
+
+        // Display the selected flag
+        document.getElementById(flagId).style.display = "block";
+
+        // Hide the dropdown after selection
+        toggleDropdown();
+      }
+
+      function showInfo(infoId) {
+        // Hide all info pages
+        var infoPages = document.querySelectorAll(".info-page");
+        infoPages.forEach(function (page) {
+          page.classList.remove("active");
+        });
+
+        // Show the selected info page
+        document.getElementById(infoId).classList.add("active");
+
+        // Remove active class from all menu items
+        var menuLinks = document.querySelectorAll(".page-scroller-menu span");
+        menuLinks.forEach(function (link) {
+          link.classList.remove("active");
+        });
+
+        // Add active class to the clicked menu item
+        document.getElementById(infoId + "-link").classList.add("active");
+      }
+
+      let currentIndex = 0;
+
+    function scrollImages(direction) {
+        const container = document.querySelector('.three-image-scroll');
+        const imageWidth = document.querySelector('.image-container').offsetWidth;
+        currentIndex = Math.min(Math.max(currentIndex + direction, 0), 2);
+        const translateX = -currentIndex * imageWidth;
+        container.style.transform = `translateX(${translateX}px)`;
+    }
+    </script>
+  </body>
+</html>

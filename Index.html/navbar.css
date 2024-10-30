@@ -1,0 +1,466 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+    }
+  .Navbar{
+      width: 100%;
+      height: 120px;
+      /* border: 1px solid red;
+       */
+  }
+  .Navbar-up{
+      width: 100%;
+      height: 70px;
+      /* border: 1px solid red;  */
+      display: flex;
+      justify-content: space-around;
+  }
+  
+  .Navbar-up-conteiner{
+      width: 92%;
+      margin: auto;
+      justify-content: space-between;
+      /* justify-content: space-around; */
+      /* border: 1px solid green;  */
+      display: flex;
+
+      height: 100%;
+  }
+  
+  .logo-afiya{
+      width:25%;
+      /* border: 1px solid red; */
+      display: flex;
+      font-size: larger;
+      font-weight: bold;
+  }
+  .logo-afiya>div>small{
+      font-weight: 100;
+      font-size: smaller;
+  }
+  .logo-afiya>div:nth-child(1){
+      width: 35%;
+      /* border: 1px solid blue; */
+      
+  }
+  .logo-afiya>div>img{
+      background-color: white;
+      width: 100%;
+      height: 100%;
+  }
+  .logo-img{
+      width: 100%;
+      height: 100%;
+  }
+  
+  .dr-logo{
+      width:10%;
+      padding: 0.9%;
+      /* border: 1px solid red; */
+  }
+  .dr-logo div {
+      width: 55%;
+      margin: auto;
+      border-radius: 50%;
+      height: 100%;
+  }
+  .dr-logo div img {
+      border: 3px solid black;
+      padding: 2%;
+      border-radius: 50%;
+      width: 90%;
+      height: 100%;
+  }
+  .consalation-logo{
+      width:20%;
+      /* border: 1px solid red; */
+      /* display: flex;    */
+      margin: auto;
+     
+  }
+  .consalation-logo div:nth-child(1) {
+      margin: auto;
+      display: flex;   
+      justify-content: space-around;
+      
+  }
+  .icon-body{
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  .icons{
+      /* width: 15%; */
+      font-size:30px;
+  }
+  .head{
+      font-size: 20;
+      color: rgb(67, 67, 73);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+   
+  
+  .contact-logo{
+      margin: auto;
+      width:15%;
+      /* border: 1px solid red; */
+      /* display: flex; */
+  }
+  .email-logo{
+      margin: auto;
+      width:18%;
+      /* display: flex; */
+      /* border: 1px solid red; */
+  }
+  
+  .flag {
+      width: 30px;
+      height: 20px;
+      margin-right: 5px;
+      display: none;
+  }
+  
+  /* Style the selector container */
+  .flag-selector {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+  }
+  
+  /* Style the dropdown container */
+  .dropdown {
+      display: none;
+      flex-direction: column;
+      /* position: absolute;
+      top: 40px;
+      left: 0; */
+      background-color: #f9f9f9;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+  
+  /* Style the dropdown items */
+  .dropdown-item {
+      padding: 10px;
+      cursor: pointer;
+  }
+  
+  /* Style the arrow down icon */
+  .arrow-down {
+      font-size: 1.2em;
+      margin-left: 5px;
+  }
+  
+  
+  .Navbar-down{
+      width: 100%;
+      height: 50px;
+      /* border: 1px solid red; */
+      background-color: rgb(11, 149, 248);
+  }
+  .Navbar-down-menu{
+     background-color: rgb(11, 149, 248);
+      color: white;
+      font-size: large;
+      font-weight: 400;
+      display: flex;
+      width: 70%;
+      justify-content: space-around;
+      align-items: center;
+      /* border: 1px solid red; */
+  }
+  .search{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      padding: 2%;
+      /* border: 1px solid red; */
+      color: white;
+      align-items: center;
+      background-color: rgb(18, 116, 185) ;
+  }
+  .search input {
+      color: white;
+      background-color: rgb(18, 116, 185)  ;
+      width: 100%;
+      height: 80%;
+      margin-top: 5%;
+      border: NONE;
+      font-size: large;
+      outline: none;
+  
+  }
+  .search input::placeholder{
+      color: white;
+      padding-left: 3%;
+  }
+  .icons-serch {
+      width: 10%;
+      font-size: 25px;
+      
+  
+  }
+  .search-container{
+      /* border: 1px solid red; */
+      width: 25%;
+  }
+  
+  .body-container{
+      width: 100%;
+      /* margin-top: 2%; */
+      height: 700px;
+      /* border: 1px solid red;    */
+  }
+  
+  .body-ad-pg {
+      background-image: url("https://www.villagedentaldtc.com/wp-content/uploads/2021/09/patient-forms-village-dental.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 350px;
+      padding-left: 5%;
+      padding-top: 10px;
+      color: white;
+      line-height: 40px;
+      /* border: 1px solid red; */
+  }
+  .body-ad-pg>p:nth-child(1){
+      display: flex;
+     
+  }
+  .body-ad-pg>p:nth-child(1)>b{
+      color: red;
+  }
+  .body-ad-pg>p:nth-child(1)>span{
+      color: white;
+  }
+  
+  /* .page-scroller-body{
+      border: 1px solid red;
+      height: 50px;
+  }
+  .page-scroller-menu{
+  
+  } */
+  
+  .page-scroller-body {
+      display: flex;
+      flex-direction: column;
+      /* border: 1px solid red; */
+      height: 100%;
+      align-items: center;
+  }
+  
+  .page-scroller-menu {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+     margin-top: 1%;
+     font-weight:bold;
+      padding: 10px;
+      border-bottom: 1px solid rgb(158, 158, 207);
+      margin-bottom: 20px;
+  }
+  
+  .page-scroller-menu span {
+      
+      position: relative;
+      cursor: pointer;
+  }
+  
+  .page-scroller-menu span:hover::after,
+  .page-scroller-menu span.active::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: blue;
+      bottom: -2px;
+  }
+  
+  .info-page {
+      display: none;
+      text-align: center;
+      /* border: 1px solid red; */
+      width: 100%;
+      height: 500px;
+  }
+  
+  .info-page.active {
+      display: block;
+  }
+   
+  .left{
+     text-align: left;
+     margin-left: 6%;
+     font-size: 30px;
+  }
+  .the-content-pg{
+      width: 90%;
+      height: 100%;
+      border-bottom: 2px dashed blue;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+  }
+  .content{
+      width: 50%;
+      font-size: 20px;
+      text-align: left;
+      align-items: center;
+      display: flex;
+  }
+  .content-img{
+      width: 40%;
+      height: 300px;
+      /* border: 1px solid red; */
+  }
+  .content-img img {
+      width: 100%;
+      height: 100%;
+  }
+  
+  .content ul {
+      list-style: none;
+    
+  }
+  .positioning{
+      position: relative;
+      top: 20%;
+  }
+  
+  .content ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 10px;
+  }
+  
+  .content ul li::before {
+      content: "\2022"; 
+      color: blue;
+      font-size: 20px;
+      position: absolute;
+      left: 0;
+  }
+  
+  .form-left {
+      top: 0%;
+      position: relative;
+      max-width: 500px;
+      margin: 20px auto;
+      border: 1px solid rgba(15, 12, 12, 0.05);
+      padding-top: 10%;
+      padding-bottom: 10%;
+      width: 70%;
+     
+      box-shadow: 0 4px 12px 10px rgba(15, 12, 12, 0.05);
+      margin: 20px;
+  }
+  
+  /* label {
+      display: block;
+      margin-bottom: 8px;
+  } */
+  .color{ 
+      color: rgb(87, 82, 82);
+  }
+  input {
+      width: 80%;
+      border-radius: 5px;
+      height: 40px;
+      border: 1px solid grey;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+  }
+  
+  textarea {
+      width: 80%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+  }
+  
+  .button {
+      background-color: rgb(12, 12, 160);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      
+  }
+  .form-head{
+      font-size: 30px; /* Adjust the font size as needed */
+      font-family: URW Chancery L, cursive;
+      color: blue;
+  }
+  
+  
+  .home-sroller {
+      /* border: 1px solid red; */
+      padding-top: 2%;
+      text-align: center;
+      width: 90%;
+      margin: auto;
+      height: 450px;
+      background-color: rgb(203, 233, 233);
+      overflow: hidden;
+      position: relative;
+  }
+  
+  .three-image-scroll {
+      /* border: 1px solid red; */
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      /* background-color: white; */
+      display: flex;
+      transition: transform 0.5s ease;
+  }
+  
+  .image-container {
+      flex: 0 0 33.33%;
+      /* background-color: white; */
+      
+  }
+  
+  .image {
+      width: 80%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+  }
+  
+  .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      font-size: 24px;
+      color: blue;
+      background: none;
+      border: none;
+  }
+  
+  .arrow-left {
+      left: 10px;
+  }
+  
+  .arrow-right {
+      right: 10px;
+  }
+  
+  .button-home{
+      width: 10%;
+      padding: 1%;
+      color: white;
+      word-spacing: 5px;
+      background-color: rgb(11, 149, 248);
+      border: none;
+      outline: none;
+  }
+  
